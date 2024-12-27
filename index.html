@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saytın Ana Səhifəsi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <img src="./images/blife1.jpg" alt="" class="balancedlife">
+        <a href="index.html">Ana Səhifə</a>
+        <a href="./services/services.html">Xidmətlər</a>
+        <a href="./dietplan/dietplan.html">Diyet Planları</a>
+        <button class="register-button " id="registerButton" >Qeydiyyat</button>
+        <div class="burger-menu-icon" id="burger-icon"> 
+            <img src="./images/menu-bar.png" alt="burger menu"> 
+        </div>
+        <div class="menu">
+             <a href="index.html">Ana Səhifə</a> 
+             <a href="./services/services.html">Xidmətlər</a> 
+             <a href="./dietplan/dietplan.html">Diyet Planları</a> 
+             <button class="register-button" id="registerButton">Qeydiyyat</button> 
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="image-container">
+            <img src="./images/top-view-tropical-leaves-vibrant-background-summer-flat-lay-composition.jpg" alt="Sağlamlıq və diet şəkli" class="diet-foto">
+            
+            <div class="info-box">
+                <h2>BalancedLife-a Xoş Gəlmisiniz...</h2>
+                <p>BalancedLife, sağlam bir həyat sürmək istəyənlər üçün mükəmməl bir yoldur.Bizim məqsədimiz sadəcə fiziki sağlamlıq deyil, həm də ruhsal və emosional rifahı təmin etməkdir. Həyatınıza balans qatmaq üçün bura daxil olun və sağlamlıq yolunda doğru addımlar atmağa başlayın!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="call-to-action">
+    <h2>Doğru Başlamaq üçün nə etməlisiniz?</h2>
+    <div class="cta-container">
+        <div class="cta-container-header">
+            <button class="cta-card active" id="individual-button">Peşəkar Məsləhətçilər</button>
+            <button class="cta-card" id="business-button">Fərdi Məsləhətçilər</button>
+        </div>
+    </div>
+
+    <div class="professional-advice" id="professional-advice"  style="display: block;">
+        <h3>Peşəkar Məsləhətçilər</h3>
+
+        <!-- Dietoloq -->
+        <div class="advisor">
+            <div class="advisor-image-container">
+                <img src="./images/dietoloq.jpg" alt="Dietoloq" class="advisor-image">
+            </div>
+            <div class="advisor-info">
+                <h4>Dr. Şamxalova Lalə</h4>
+                <p><strong>İxtisası:</strong> Dietoloq və Sağlamlıq Mütəxəssisi</p>
+                <p><strong>Biyoqrafiya:</strong> Dr. Şamxalova Lalə, 14 ildən artıq təcrübəyə sahib bir dietoloqdur. Bir çox özəl və dövlət tibb müəssisələrində çalışıb. O, sağlam qidalanma sahəsində mütəxəssisdir və fərdi diet planları hazırlayır.</p>
+                <p><strong><i class="fas fa-phone"></i>  Əlaqə nömrəsi:</strong>  +994 70 997 10 10</p>
+            </div>
+        </div>
+
+        <!-- Fitnes Mütəxəssisi -->
+        <div class="advisor">
+            <div class="advisor-info">
+                <h4>İsmayıl Quliyev</h4>
+                <p><strong>İxtisası:</strong> Fitnes Mütəxəssisi və Təlimçi</p>
+                <p><strong>Biyoqrafiya:</strong> İsmayıl Quliyev, 15 ildən artıq təcrübəyə malik fitnes mütəxəssisidir. Onun məşq proqramları hər yaş qrupuna uyğundur və fərdi yanaşmalar tətbiq edir.</p>
+                <p><strong><i class="fas fa-phone"></i>  Əlaqə nömrəsi:</strong>  +994 55 900 77 88</p>
+            </div>
+            <div class="advisor-image-container">
+                <img src="./images/sport-person-training-with-hula-hoop.jpg" alt="Fitnes Mütəxəssisi" class="advisor-image">
+            </div>
+        </div>
+
+        <!-- Psixoloq -->
+        <div class="advisor">
+            <div class="advisor-image-container">
+                <img src="./images/psixoloq.jpg" alt="Psixoloq" class="advisor-image">
+            </div>
+            <div class="advisor-info">
+                <h4>Dr. Nigar Əliyeva</h4>
+                <p><strong>İxtisası:</strong> Psixoloq və Sağlamlıq Məsləhətçisi</p>
+                <p><strong>Biyoqrafiya:</strong> Dr. Nigar Əliyeva, psixoloji dəstək və stress idarəetməsi üzrə mütəxəssisdir. O, insanlara sağlam düşüncə və emosional sağlamlıq mövzusunda məsləhətlər verir.</p>
+                <p><strong><i class="fas fa-phone"></i>  Əlaqə nömrəsi:</strong>  +994 50 987 77 88</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="personal-advice" id="personal-advice"  style="display: none">
+        <h3>Fərdi Məsləhətçilər</h3>
+
+        <!-- İstifadəçi Rəyləri -->
+        <div class="review">
+            <div class="review-text">
+                <h4>Elvin Quliyev</h4>
+                <p><strong>Rəy:</strong>"Bir neçə həftə ərzində tətbiq etdiyim diet və məşq proqramı nəticəsində sağlamlığımda böyük dəyişikliklər oldu. Artıq çəkimdən qurtuldum və həm fiziki cəhətdən, həm də emosional olaraq daha yaxşı hiss edirəm. Bu platforma mənim üçün sağlam həyata doğru böyük bir addım oldu. Əsas odur ki, düzgün istiqamətlə başla və məqsədinə çatmaq üçün əzmkarlıqla davam et."</p>
+            </div>
+
+            <div class="image">
+                <img src="./images/elvin.jpg" alt="Əvvəl" class="image-content">
+                <p>Əvvəl-Sonra</p>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-text">
+                <h4>Sabina Məmmədova</h4>
+                <p><strong>Rəy:</strong> "Bu platforma mənə özümü kəşf etməkdə kömək etdi. Sağlam qidalanma və düzgün məşq planı ilə bədənimdə və ruh halımda müsbət dəyişikliklər gördüm. Mən daha enerjiliyəm və həyatımın hər sahəsində özümü daha yaxşı hiss edirəm. Sağlam qidalanmanın gücünü hiss etmək və həyat enerjimi bərpa etmək mənim üçün çox vacib idi. Əgər bir addım atmaq istəyirsinizsə, indi başlayın və dəyişikliklərin şahidi olun."</p>
+            </div>
+
+            <div class="image">
+                <img src="./images/sabina.jpg" alt="Əvvəl" class="image-content">
+                <p>Əvvəl-Sonra</p>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-text">
+            <h4>Aysel Həsənova</h4>
+            <p><strong>Hekayə:</strong> "Bütün həyatım boyunca balanssız qidalanma və qeyri-sağlam həyat tərzi ilə mübarizə apardım. Lakin, bu platformadan aldığım məsləhətlər nəticəsində artıq ideal çəkimə çatdım və daha sağlam bir həyat sürürəm. Mənim təcrübəmdə ən vacib şey, ardıcıl və müntəzəm olmaq idi. Həmçinin, qidalanma planımı düzgün şəkildə tərtib etməyim və məşq proqramına ciddi riayət etməyim böyük rol oynadı. Hər kəsə tövsiyəm odur ki, öz məqsədlərinizə inanaraq, ardıcıl şəkildə çalışın."</p>
+            </div>
+            <div class="image">
+                <img src="./images/aysel.jpg" alt="Əvvəl" class="image-content">
+                <p>Əvvəl-Sonra</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq-section">
+    <h2>Tez-tez Verilən Suallar</h2>
+    <div class="faq-item">
+        <div class="faq-question">
+            <p>Burada verilən məlumatlar dietoloq və ya mütəxəssis tərəfindən hazırlanıb?</p>
+            <img src="../images/plus.png" alt="icon" class="toggle-icon">
+        </div>
+        <div class="faq-answer">
+            <p>Məlumatlar təcrübəli dietoloqlar və mütəxəssislər tərəfindən hazırlanır, lakin hər hansı bir ciddi pəhriz dəyişiklikləri üçün həkiminizlə məsləhətləşməniz tövsiyə olunur.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <p>Bədən tipimə uyğun ideal pəhriz necə olmalıdır?</p>
+            <img src="./images/plus.png" alt="icon" class="toggle-icon">
+        </div>
+        <div class="faq-answer">
+            <p>Bədən tipinizə uyğun pəhriz seçmək üçün bədən ölçülərinizi və məqsədlərinizi nəzərə alaraq fərdiləşdirilmiş tövsiyələr burda mövcuddur.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <p>Sağlam çəki itirmə prosesi nə qədər vaxt alır?</p>
+            <img src="./images/plus.png" alt="icon" class="toggle-icon">
+        </div>
+        <div class="faq-answer">
+            <p>Sağlam çəki itirmə prosesi zaman alır və fərdi olaraq dəyişir. Ümumiyyətlə, həftədə 0.5-1 kq itirmək sağlam bir tempdir. İrəliləyişinizi izləmək üçün pəhriz və idman planınıza diqqətlə əməl etməlisiniz.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <p>İdman etmədən çəki verə bilərəmmi?</p>
+            <img src="./images/plus.png" alt="icon" class="toggle-icon">
+        </div>
+        <div class="faq-answer">
+            <p>Bəli, idman etmədən də çəki itirmək mümkündür, amma ən effektiv nəticələr idman və düzgün qidalanma ilə əldə edilir. İdman, metabolizmanı sürətləndirir və əzələ kütləsinin artmasına kömək edir.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <p>Pəhriz zamanı şirin yemək istəyini necə idarə edə bilərəm?</p>
+            <img src="./images/plus.png" alt="icon" class="toggle-icon">
+        </div>
+        <div class="faq-answer">
+            <p>Şirin yemək istəyini azaltmaq üçün, təbii şirinliklərdən faydalana bilərsiniz (məsələn, meyvələr). Həmçinin, şəkərli qidaları tədricən azaldaraq bədəninizi onlara alışdırmağa çalışın. Yüngül şirin qəlyanaltılar da bu istəyinizi qarşılayacaq.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <p>Detoks proqramları effektivdirmi?</p>
+            <img src="./images/plus.png" alt="icon" class="toggle-icon">
+        </div>
+        <div class="faq-answer">
+            <p>Detoks proqramlarının effektivliyi barədə elmi sübutlar məhduddur. Orqanizm təbii olaraq qaraciyər və böyrəklər vasitəsilə toksinləri təmizləyir. Sağlam qidalanma və su istehlakı detoksa ehtiyac olmadan bədənin təmizlənməsinə kömək edir.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <p>Aralıq Pəhrizi (Intermittent Fasting) təhlükəsizdirmi?</p>
+            <img src="./images/plus.png" alt="icon" class="toggle-icon">
+        </div>
+        <div class="faq-answer">
+            <p>Aralıq pəhrizi çox insanlar üçün təhlükəsizdir, amma hər kəs üçün uyğun olmaya bilər. Xüsusilə hamilə qadınlar, diabet xəstələri və ya xroniki xəstəliyi olan insanlar bu pəhrizə başlamazdan əvvəl həkimlə məsləhətləşməlidir.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <p>Pəhrizdə duz istehlakını necə azaltmaq olar?</p>
+            <img src="./images/plus.png" alt="icon" class="toggle-icon">
+        </div>
+        <div class="faq-answer">
+            <p>Duz istehlakını azaltmaq üçün işlənmiş qidaları məhdudlaşdırın və təzə qidalara üstünlük verin. Yeməklərinizə təbii ədviyyatlar (məsələn, sarıkök, bibər, otlar) əlavə edərək duzun yerini doldura bilərsiniz.</p>
+        </div>
+    </div>
+</section>
+
+    
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>BalancedLife</h3>
+                <p>BalancedLife, sağlam həyat tərzini təşviq edən bir platformadır. Sağlamlıq, qidalanma və fitnes haqqında ən yaxşı məsləhətləri burada tapa bilərsiniz.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Sürətli Keçidlər</h3>
+                <ul>
+                    <li><a href="index.html">Ana Səhifə</a></li>
+                    <li><a href="./services/services.html">Xidmətlər</a></li>
+                    <li><a href="./dietplan/dietplan.html">Diyet Planları</a></li>
+                    <li><a href="./registration/registration.html">Qeydiyyat</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Əlaqə</h3>
+                <p><i class="fas fa-phone"></i> +994 50 123 45 67</p>
+                <p><i class="fas fa-envelope"></i> info@balancedlife.az</p>
+                <p><i class="fas fa-map-marker-alt"></i> Bakı, Azərbaycan</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BalancedLife. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

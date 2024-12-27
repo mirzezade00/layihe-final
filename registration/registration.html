@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qeydiyyat</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <header id="header">
+        <img src="../images/blife1.jpg" alt="" class="balancedlife">
+        <a href="../index.html">Ana Səhifə</a>
+        <a href="../services/services.html">Xidmətlər</a>
+        <a href="../dietplan/dietplan.html">Diyet Planları</a>
+        <button class="register-button" id="headerRegisterButton">Qeydiyyat</button>
+        <div class="burger-menu-icon" id="burger-icon">
+            <img src="../images/menu-bar.png" alt="burger menu">
+        </div>
+        <div class="menu">
+             <a href="./index.html">Ana Səhifə</a>
+             <a href="../services/services.html">Xidmətlər</a>
+             <a href="../dietplan/dietplan.html">Diyet Planları</a>
+             <button class="register-button" id="headerRegisterButton">Qeydiyyat</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="register-wrapper">
+            <div class="register-card">
+                <h2>Qeydiyyat</h2>
+                <form id="registerForm" class="register-form">
+                    <div class="form-group">
+                        <label for="name">Ad:</label>
+                        <input type="text" id="name" name="name" placeholder="Adınızı daxil edin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-poçt:</label>
+                        <input type="email" id="email" name="email" placeholder="E-poçt ünvanınızı daxil edin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Şifrə:</label>
+                        <input type="password" id="password" name="password" placeholder="Şifrənizi daxil edin" required>
+                    </div>
+                    <button type="button" class="register-button" id="formRegisterButton">Qeydiyyat</button>
+                </form>
+                <p id="message" class="message"></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diyet Planları</title>
+    <link rel="stylesheet" href="dietplan.css">
+</head>
+<body>
+    <header id="header">
+        <img src="../images/blife1.jpg" alt="" class="balancedlife">
+        <a href="../index.html">Ana Səhifə</a>
+        <a href="../services/services.html">Xidmətlər</a>
+        <a href="../dietplan/dietplan.html">Diyet Planları</a>
+        <button class="register-button " id="registerButton" >Qeydiyyat</button>
+        <div class="burger-menu-icon" id="burger-icon"> 
+            <img src="../images/menu-bar.png" alt="burger menu"> 
+        </div>
+        <div class="menu">
+             <a href="../index.html">Ana Səhifə</a> 
+             <a href="../services/services.html">Xidmətlər</a> 
+             <a href="../dietplan/dietplan.html">Diyet Planları</a> 
+             <button class="register-button" id="registerButton">Qeydiyyat</button> 
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="#categories">Diet Kateqoriyaları</a></li>
+            <li><a href="#personal-plan">Günlük kaori</a></li>
+            <li><a href="#motivation">Motivasiya</a></li>
+            <!-- <li><a href="#tips">Hədəflər</a></li> -->
+        </ul>
+    </nav>
+
+    <main>
+        <section id="categories" class="section">
+            <h2>Diet Kateqoriyaları</h2>
+            <div class="categories">
+                <div class="category-card">
+                    <a href="../weight-loss/weight-loss.html" >
+                        <h3>Arıqlama Diyetləri</h3>
+                        <img src="../images/balans.jpg" alt="Weight Loss Diet">
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="../muscle-gain/muscle-gain.html" >
+                        <h3>Əzələ Yığımı</h3>
+                        <img src="../images/woman.jpg" alt="Muscle Gain Diet">
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="../vegan-diet/vegan-diet.html" >
+                        <h3>Vegetarian və Vegan</h3>
+                        <img src="../images/veganwomen.jpg" alt="Vegan Diet">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="personal-plan" class="section daily-calory">
+            <h2>Günlük kalori ehtiyacı</h2>
+            <form id="diet-form">
+                <label>Yaş:
+                    <input type="text" name="age" placeholder="Yaşınızı daxil edin" required>
+                </label>
+                <label>Çəki (kg):
+                    <input type="text" name="weight" placeholder="Çəkini daxil edin" required>
+                </label>
+                <label>Boy (cm):
+                    <input type="text" name="height" placeholder="Boyunuzu daxil edin" required>
+                </label>
+                <label>Cinsiyyət:
+                    <select name="gender" required>
+                        <option value="male">Kişi</option>
+                        <option value="female">Qadın</option>
+                    </select>
+                </label>
+                <button type="submit">Hesabla</button>
+            </form>
+            <div id="result-container"></div>
+        </section>
+
+
+        <section class="container">
+            <h1>Boy və Kilo Cədvəli</h1>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Boy (cm)</th>
+                    <th>Kişilər üçün (kg)</th>
+                    <th>Qadınlar üçün (kg)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- <tr><td>150</td><td>45-55</td><td>40-50</td></tr>
+                  <tr><td>151</td><td>46-56</td><td>41-51</td></tr>
+                  <tr><td>152</td><td>47-57</td><td>42-52</td></tr>
+                  <tr><td>153</td><td>48-58</td><td>43-53</td></tr>
+                  <tr><td>154</td><td>49-59</td><td>44-54</td></tr> -->
+                  <tr><td>155</td><td>50-60</td><td>45-55</td></tr>
+                  <tr><td>156</td><td>51-61</td><td>46-56</td></tr>
+                  <tr><td>157</td><td>52-62</td><td>47-57</td></tr>
+                  <tr><td>158</td><td>53-63</td><td>48-58</td></tr>
+                  <tr><td>159</td><td>54-64</td><td>49-59</td></tr>
+                  <tr><td>160</td><td>55-65</td><td>50-60</td></tr>
+                  <tr><td>161</td><td>56-66</td><td>51-61</td></tr>
+                  <tr><td>162</td><td>57-67</td><td>52-62</td></tr>
+                  <tr><td>163</td><td>58-68</td><td>53-63</td></tr>
+                  <tr><td>164</td><td>59-69</td><td>54-64</td></tr>
+                  <tr><td>165</td><td>60-70</td><td>55-65</td></tr>
+                  <tr><td>166</td><td>61-71</td><td>56-66</td></tr>
+                  <tr><td>167</td><td>62-72</td><td>57-67</td></tr>
+                  <tr><td>168</td><td>63-73</td><td>58-68</td></tr>
+                  <tr><td>169</td><td>64-74</td><td>59-69</td></tr>
+                  <tr><td>170</td><td>65-75</td><td>60-70</td></tr>
+                  <tr><td>171</td><td>66-76</td><td>61-71</td></tr>
+                  <tr><td>172</td><td>67-77</td><td>62-72</td></tr>
+                  <tr><td>173</td><td>68-78</td><td>63-73</td></tr>
+                  <tr><td>174</td><td>69-79</td><td>64-74</td></tr>
+                  <tr><td>175</td><td>70-80</td><td>65-75</td></tr>
+                  <!-- <tr><td>176</td><td>71-81</td><td>66-76</td></tr>
+                  <tr><td>177</td><td>72-82</td><td>67-77</td></tr>
+                  <tr><td>178</td><td>73-83</td><td>68-78</td></tr>
+                  <tr><td>179</td><td>74-84</td><td>69-79</td></tr>
+                  <tr><td>180</td><td>75-85</td><td>70-80</td></tr> -->
+                </tbody>
+              </table>
+              
+          </section>
+
+        <section id="motivation" class="section">
+            <h2>Motivasiya</h2>
+            <div id="goal-container">
+                <p id="quote">Sitat burada görsənəcək</p>
+                <p id="author"></p>
+            </div>
+        </section>
+        
+        <!-- <section id="tips" class="section">
+            <h2>Hədəf</h2>
+            <div id="goal-container">
+                <form id="goal-form">
+                    <input type="text" id="goal-input" placeholder="Bugünkü məqsədinizi yazın" required>
+                    <button type="submit" class="goal-button">Əlavə et</button>
+                </form>
+                <ul id="goal-list"></ul>
+            </div>
+        </section> -->
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>BalancedLife</h3>
+                <p>BalancedLife, sağlam həyat tərzini təşviq edən bir platformadır. Sağlamlıq, qidalanma və fitnes haqqında ən yaxşı məsləhətləri burada tapa bilərsiniz.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Sürətli Keçidlər</h3>
+                <ul>
+                    <li><a href="../index.html">Ana Səhifə</a></li>
+                    <li><a href="../services//services.html">Xidmətlər</a></li>
+                    <li><a href="../dietplan/dietplan.html">Diyet Planları</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Əlaqə</h3>
+                <p><i class="fas fa-phone"></i> +994 50 123 45 67</p>
+                <p><i class="fas fa-envelope"></i> info@balancedlife.az</p>
+                <p><i class="fas fa-map-marker-alt"></i> Bakı, Azərbaycan</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 BalancedLife. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+
+    <script src="dietplan.js"></script>
+</body>
+</html>
